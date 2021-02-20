@@ -1,0 +1,38 @@
+.header {
+    background: url('/Project/Images/bg-wave.png'), linear-gradient(94deg, rgba(255,99,93,1) 3%, rgba(208,26,73,1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+
+    & > * {
+        flex-basis: 100%;
+    }
+
+    &__image-container {
+        max-width: 45rem;
+    }
+
+    &__description-container {
+        margin-right: $space-2;
+    }
+
+    &__description  {
+
+        h1 {
+        font-size: 6rem;
+        font-weight: 600;
+        }
+
+        h4 {
+            margin-top: $space-1;
+            margin-bottom: $space-3;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+    }
+
+    &__button-wrapper .btn--cta {
+        margin-right: $space-1;
+    }
+}

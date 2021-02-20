@@ -23,7 +23,7 @@
     }
 
     &__list > * + * {
-        margin-left: 3rem;
+        margin-left: $space-3;
     }
 
     &__list-item {

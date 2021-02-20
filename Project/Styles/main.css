@@ -389,6 +389,55 @@ h6 {
           align-items: center;
 }
 
+.o-primary-size-container {
+  max-width: 70%;
+}
+
+.o-half-size-container {
+  max-width: 50%;
+}
+
+.o-padding-bot--50 {
+  padding-bottom: 5rem;
+}
+
+.o-padding-top--50 {
+  padding-top: 5rem;
+}
+
+.o-padding-bot--100 {
+  padding-bottom: 10rem;
+}
+
+.o-padding-top--100 {
+  padding-top: 10rem;
+}
+
+.o-margin-bot--50 {
+  margin-bottom: 5rem;
+}
+
+.o-margin-top--50 {
+  margin-top: 5rem;
+}
+
+.o-margin-bot--100 {
+  margin-bottom: 10rem;
+}
+
+.o-margin-top--100 {
+  margin-top: 10rem;
+}
+
+.o-text-center {
+  text-align: center;
+}
+
+.o-x-center-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .top-navigation {
   position: fixed;
   width: 100%;
@@ -397,7 +446,7 @@ h6 {
   padding: 2rem 5rem 0;
 }
 
-.top-navigation-wrapper {
+.top-navigation__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,44 +455,55 @@ h6 {
           justify-content: space-between;
 }
 
-.top-navigation-left-section {
+.top-navigation__left-section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.top-navigation-left-section .logo-wrapper {
+.top-navigation__left-section .logo-wrapper {
   max-width: 5rem;
   margin-right: 0.8rem;
 }
 
-.top-navigation-left-section .text-wrapper h5 {
+.top-navigation__left-section .text-wrapper h5 {
   margin-bottom: 0.2rem;
 }
 
-.top-navigation-right-section-list > * + * {
+.top-navigation__list > * + * {
   margin-left: 3rem;
 }
 
-.top-navigation-right-section-list-item .white-color-text {
+.top-navigation__list-item .white-color-text {
   color: #fff;
 }
 
-.top-navigation-right-section-list-item .grey-color-text {
+.top-navigation__list-item .grey-color-text {
   color: #d3c9c9;
 }
 
-.top-navigation-right-section-list-item .grey-color-text:hover {
+.top-navigation__list-item .grey-color-text:hover {
   color: #fff;
 }
 
 .btn {
   outline: none;
   padding: 1rem 2.4rem;
-  border: .1rem solid;
+  border: .2rem solid;
   border-radius: 2rem;
   background: transparent;
   color: #fff;
+}
+
+.btn--cta {
+  border-color: #fff;
+  background-color: #fff;
+  color: #DD2D4F;
+}
+
+.btn--cta:hover {
+  -webkit-box-shadow: 0px 0px 16px 2px grey;
+          box-shadow: 0px 0px 16px 2px grey;
 }
 
 .btn--primary {
@@ -463,7 +523,7 @@ h6 {
 }
 
 .btn--secondary {
-  border: 2px solid #fff;
+  border-color: #fff;
 }
 
 .btn--secondary:hover {
@@ -472,12 +532,49 @@ h6 {
 }
 
 .btn--third {
-  border: 2px solid #DD2D4F;
+  border-color: #DD2D4F;
   color: #DD2D4F;
 }
 
 .btn--third:hover {
   border-color: #404755;
   color: #404755;
+}
+
+.header {
+  background: url("/Project/Images/bg-wave.png"), linear-gradient(94deg, #ff635d 3%, #d01a49 100%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
+
+.header > * {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.header__image-container {
+  max-width: 45rem;
+}
+
+.header__description-container {
+  margin-right: 2rem;
+}
+
+.header__description h1 {
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.header__description h4 {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.header__button-wrapper .btn--cta {
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,5 @@
 @import './01-Settings/settings-colors';
+@import './01-Settings/settings-spacings';
 
 @import './03-Generics/generics-normalize';
 @import './03-Generics/generics-selection';
@@ -8,10 +9,16 @@
 @import './04-Elements/elements-links';
 @import './04-Elements/elements-lists';
 @import './04-Elements/elements-headings';
+@import './04-Elements/elements-paragraphs';
 
 @import './05-Objects/o-flex-containers';
+@import './05-Objects/o-size-containers';
+@import './05-Objects/o-spacing-containers';
+@import './05-Objects/o-non-flex-centered';
+
 
 @import './06-Components/c-top-navigation';
 @import './06-Components/c-buttons';
+@import './06-Components/c-header';
 
 
