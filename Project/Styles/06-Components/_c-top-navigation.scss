@@ -1,0 +1,46 @@
+.top-navigation {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem 5rem 0;
+    
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &-left-section {
+        align-items: center;
+        .logo-wrapper {
+            max-width: 5rem;
+            margin-right: 0.8rem;
+        }
+
+        .text-wrapper h5 {
+            margin-bottom: 0.2rem;
+        }
+    }
+    
+    &-right-section {
+          
+        &-list > * + *{
+          margin-left: 3rem;
+        }
+
+        &-list-item {
+            .white-color-text {
+                color: $primary-white;
+            }
+            .grey-color-text {
+                color: $grey-700;
+
+                &:hover {
+                    color: $primary-white;
+                 }
+            }
+            
+        }
+    }
+    
+}

@@ -1,0 +1,22 @@
+.o-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.o-flex-column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.o-flex-main-axis-centered {
+    justify-content: center;
+}
+
+.o-flex-cross-axis-centered {
+    align-items: center;
+}
+
+.o-flex-main-cross-axis-centered {
+    justify-content: center;
+    align-items: center;
+}

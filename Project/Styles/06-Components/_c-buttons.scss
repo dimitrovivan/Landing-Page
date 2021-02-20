@@ -1,0 +1,41 @@
+.btn {
+    outline: none;
+    padding: 1rem 2.4rem;
+    border: .1rem solid;
+    border-radius: 2rem;
+    background: transparent;
+    color: $primary-white;
+}
+
+.btn--primary {
+    background: $pink-700;
+    border-color: $pink-700;
+    box-shadow: 0 0px 5px 1px rgb(88, 78, 78);
+
+    &:hover {
+        box-shadow: 0 0 10px 2px rgb(63, 60, 60);
+    }
+
+    &.darkblue-bg {
+        background-color: $blue-700;
+    }
+}
+
+.btn--secondary {
+     border: 2px solid $primary-white;
+
+     &:hover {
+         border-color: $grey-700;
+         color: $grey-700;
+     }
+}
+
+.btn--third{
+    border: 2px solid $pink-700;
+    color: $pink-700;
+
+    &:hover {
+        border-color: $blue-700;
+        color: $blue-700;
+    }
+}
