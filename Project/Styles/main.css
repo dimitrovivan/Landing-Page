@@ -728,4 +728,10 @@ p {
   border-radius: 50%;
   background-color: #fff;
 }
+
+.third-section .fas:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 1rem 0.1rem #1D1D1D;
+          box-shadow: 0 0 1rem 0.1rem #1D1D1D;
+}
 /*# sourceMappingURL=main.css.map */
