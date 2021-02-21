@@ -307,7 +307,7 @@ ul {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-family: 'Montseratt', sans-serif;
   margin: 0;
   font-weight: 400;
@@ -346,6 +346,13 @@ h6 {
   font-family: 'Montseratt', sans-serif;
   margin: 0;
   font-weight: 400;
+}
+
+p {
+  color: gray;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
 }
 
 .o-flex-row-container {
@@ -502,20 +509,20 @@ h6 {
 }
 
 .btn--cta:hover {
-  -webkit-box-shadow: 0px 0px 16px 2px grey;
-          box-shadow: 0px 0px 16px 2px grey;
+  -webkit-box-shadow: 0 0 1.6rem .2rem grey;
+          box-shadow: 0 0 1.6rem .2rem grey;
 }
 
 .btn--primary {
   background: #DD2D4F;
   border-color: #DD2D4F;
-  -webkit-box-shadow: 0 0px 5px 1px #584e4e;
-          box-shadow: 0 0px 5px 1px #584e4e;
+  -webkit-box-shadow: 0 0 0.5rem 0.1rem #584e4e;
+          box-shadow: 0 0 0.5rem 0.1rem #584e4e;
 }
 
 .btn--primary:hover {
-  -webkit-box-shadow: 0 0 10px 2px #3f3c3c;
-          box-shadow: 0 0 10px 2px #3f3c3c;
+  -webkit-box-shadow: 0 0 1rem 0.2rem #3f3c3c;
+          box-shadow: 0 0 1rem 0.2rem #3f3c3c;
 }
 
 .btn--primary.darkblue-bg {
@@ -564,6 +571,7 @@ h6 {
 .header__description h1 {
   font-size: 6rem;
   font-weight: 600;
+  letter-spacing: 0.2rem;
 }
 
 .header__description h4 {
@@ -576,5 +584,64 @@ h6 {
 
 .header__button-wrapper .btn--cta {
   margin-right: 1rem;
+}
+
+.first-section__header {
+  margin-bottom: 3rem;
+}
+
+.first-section__header h1 {
+  color: #DD2D4F;
+}
+
+.first-section__header h3 {
+  color: #000;
+}
+
+.first-section__header h1,
+.first-section__header h3 {
+  margin-bottom: 1rem;
+}
+
+.first-section__body > * + * {
+  margin-left: 2rem;
+}
+
+.first-section__body > * {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.first-section__footer {
+  margin-top: 3rem;
+}
+
+.fa-undo,
+.fa-wrench,
+.fa-download {
+  color: #DD2D4F;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.advertise-card {
+  text-align: center;
+  -webkit-box-shadow: 0 0 0.6rem #cfcfcf;
+          box-shadow: 0 0 0.6rem #cfcfcf;
+  padding: 3rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.advertise-card > * + * {
+  margin-top: 2rem;
+}
+
+.advertise-card h3 {
+  color: #DD2D4F;
+}
+
+.advertise-card:hover {
+  -webkit-box-shadow: 0 0 1.5rem 0px #d3c9c9;
+          box-shadow: 0 0 1.5rem 0px #d3c9c9;
 }
 /*# sourceMappingURL=main.css.map */

@@ -13,17 +13,17 @@
     color: $pink-700;
 
     &:hover {
-        box-shadow: 0px 0px 16px 2px grey;
+        box-shadow: 0 0 1.6rem .2rem grey;
     }
 }
 
 .btn--primary {
     background: $pink-700;
     border-color: $pink-700;
-    box-shadow: 0 0px 5px 1px rgb(88, 78, 78);
+    box-shadow: 0 0 .5rem .1rem rgb(88, 78, 78);
 
     &:hover {
-        box-shadow: 0 0 10px 2px rgb(63, 60, 60);
+        box-shadow: 0 0 1rem .2rem rgb(63, 60, 60);
     }
 
     &.darkblue-bg {

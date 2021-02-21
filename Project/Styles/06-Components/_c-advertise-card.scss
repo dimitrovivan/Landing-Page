@@ -1,0 +1,18 @@
+.advertise-card {
+    text-align: center;
+    box-shadow: 0 0 .6rem rgb(207, 207, 207);
+    padding: $space-3 $space-1;
+    border-radius: 0.5rem;
+    
+    & > * + * {
+       margin-top: $space-2;
+    }
+
+    h3 {
+        color: $pink-700;
+    }
+
+    &:hover {
+        box-shadow: 0 0 1.5rem 0px $grey-700;
+    }
+}

@@ -1,0 +1,30 @@
+.first-section__header {
+    margin-bottom: $space-3;
+
+    h1 {
+        color: $pink-700;
+    }
+
+    h3 {
+        color: $primary-black;
+    }
+
+    h1,
+    h3 {
+        margin-bottom: $space-1;
+    }
+}
+
+.first-section__body {
+    & > * + * {
+        margin-left: $space-2;
+    }
+
+    & > * {
+        flex-basis: 100%;
+    }
+}
+
+.first-section__footer {
+    margin-top: $space-3;
+}
