@@ -1,18 +1,43 @@
+.advertise-cards-wrapper {
+    display: flex;
+    
+    & > * + * {
+        margin-left: $space-2;
+    }
+
+    & > * {
+        flex-basis: 100%;
+    }
+}
+
 .advertise-card {
     text-align: center;
-    box-shadow: 0 0 .6rem rgb(207, 207, 207);
     padding: $space-3 $space-1;
-    border-radius: 0.5rem;
-    
+
     & > * + * {
        margin-top: $space-2;
     }
+}
 
-    h3 {
-        color: $pink-700;
-    }
+.advertise-card--for-white-bg {
+    box-shadow: 0 0 .6rem rgb(207, 207, 207);
+    border-radius: 0.5rem;
 
     &:hover {
         box-shadow: 0 0 1.5rem 0px $grey-700;
     }
-}
+
+    .advertise-card__heading {
+        color: $pink-700;
+    }
+  }
+
+  .advertise-card--for-pink-bg {
+    p{
+        color: $grey-700;
+    }
+    .advertise-card__heading {
+        color: $primary-white;
+    }
+  }
+

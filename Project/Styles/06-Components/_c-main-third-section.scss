@@ -1,0 +1,25 @@
+.main__third-section-wrapper  {
+    background: url('/Project/Images/bg-wave-sym.png'), linear-gradient(94deg, rgba(255,99,93,1) 3%, rgba(208,26,73,1) 100%);
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.third-section {
+
+    &__paragraph {
+        color: $grey-700;
+        margin-bottom: $space-2;
+    }
+
+    &__heading {
+        margin-bottom: $space-2;
+    }
+
+    .fas {
+        padding: 1.5rem;
+        border-radius: 50%;
+        background-color: $primary-white;
+    }
+
+}

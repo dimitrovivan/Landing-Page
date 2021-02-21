@@ -15,16 +15,6 @@
     }
 }
 
-.first-section__body {
-    & > * + * {
-        margin-left: $space-2;
-    }
-
-    & > * {
-        flex-basis: 100%;
-    }
-}
-
 .first-section__footer {
     margin-top: $space-3;
 }

@@ -586,6 +586,61 @@ p {
   margin-right: 1rem;
 }
 
+.fa-undo,
+.fa-wrench,
+.fa-download {
+  color: #DD2D4F;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.advertise-cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advertise-cards-wrapper > * + * {
+  margin-left: 2rem;
+}
+
+.advertise-cards-wrapper > * {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.advertise-card {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.advertise-card > * + * {
+  margin-top: 2rem;
+}
+
+.advertise-card--for-white-bg {
+  -webkit-box-shadow: 0 0 0.6rem #cfcfcf;
+          box-shadow: 0 0 0.6rem #cfcfcf;
+  border-radius: 0.5rem;
+}
+
+.advertise-card--for-white-bg:hover {
+  -webkit-box-shadow: 0 0 1.5rem 0px #d3c9c9;
+          box-shadow: 0 0 1.5rem 0px #d3c9c9;
+}
+
+.advertise-card--for-white-bg .advertise-card__heading {
+  color: #DD2D4F;
+}
+
+.advertise-card--for-pink-bg p {
+  color: #d3c9c9;
+}
+
+.advertise-card--for-pink-bg .advertise-card__heading {
+  color: #fff;
+}
+
 .first-section__header {
   margin-bottom: 3rem;
 }
@@ -603,46 +658,8 @@ p {
   margin-bottom: 1rem;
 }
 
-.first-section__body > * + * {
-  margin-left: 2rem;
-}
-
-.first-section__body > * {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
 .first-section__footer {
   margin-top: 3rem;
-}
-
-.fa-undo,
-.fa-wrench,
-.fa-download {
-  color: #DD2D4F;
-  font-size: 4rem;
-  margin-bottom: 2rem;
-}
-
-.advertise-card {
-  text-align: center;
-  -webkit-box-shadow: 0 0 0.6rem #cfcfcf;
-          box-shadow: 0 0 0.6rem #cfcfcf;
-  padding: 3rem 1rem;
-  border-radius: 0.5rem;
-}
-
-.advertise-card > * + * {
-  margin-top: 2rem;
-}
-
-.advertise-card h3 {
-  color: #DD2D4F;
-}
-
-.advertise-card:hover {
-  -webkit-box-shadow: 0 0 1.5rem 0px #d3c9c9;
-          box-shadow: 0 0 1.5rem 0px #d3c9c9;
 }
 
 .second-section > * {
@@ -688,5 +705,27 @@ p {
   color: #1D1D1D;
   font-weight: 100;
   margin-bottom: 1rem;
+}
+
+.main__third-section-wrapper {
+  background: url("/Project/Images/bg-wave-sym.png"), linear-gradient(94deg, #ff635d 3%, #d01a49 100%);
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.third-section__paragraph {
+  color: #d3c9c9;
+  margin-bottom: 2rem;
+}
+
+.third-section__heading {
+  margin-bottom: 2rem;
+}
+
+.third-section .fas {
+  padding: 1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
