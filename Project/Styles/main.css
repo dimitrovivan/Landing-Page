@@ -595,7 +595,7 @@ p {
 }
 
 .first-section__header h3 {
-  color: #000;
+  color: #1D1D1D;
 }
 
 .first-section__header h1,
@@ -643,5 +643,50 @@ p {
 .advertise-card:hover {
   -webkit-box-shadow: 0 0 1.5rem 0px #d3c9c9;
           box-shadow: 0 0 1.5rem 0px #d3c9c9;
+}
+
+.second-section > * {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.second-section__image {
+  max-width: 40rem;
+}
+
+.second-section__span-heading {
+  display: inline-block;
+  font-size: 2rem;
+  position: relative;
+  color: #DD2D4F;
+  margin-bottom: 1rem;
+}
+
+.second-section__span-heading::before {
+  content: '';
+  position: absolute;
+  background-color: #DD2D4F;
+  top: 1.1rem;
+  left: -3rem;
+  width: 2rem;
+  height: 0.2rem;
+}
+
+.second-section__first-description, .second-section__second-description {
+  max-width: 30%;
+}
+
+.second-section__first-description {
+  text-align: right;
+}
+
+.second-section__second-description .span-heading-line-before {
+  margin-left: 3rem;
+}
+
+.second-section__heading {
+  color: #1D1D1D;
+  font-weight: 100;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
