@@ -20,6 +20,11 @@
         padding: 1.5rem;
         border-radius: 50%;
         background-color: $primary-white;
+        
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 1rem .1rem $primary-black;
+        }
     }
 
 }
