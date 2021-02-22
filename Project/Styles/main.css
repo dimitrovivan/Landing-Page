@@ -408,6 +408,10 @@ p {
   max-width: 50%;
 }
 
+.o-small-size-container {
+  max-width: 40%;
+}
+
 .o-padding-bot--50 {
   padding-bottom: 5rem;
 }
@@ -939,5 +943,70 @@ p {
 
 .main__sixth-section .sixth-section__main-heading {
   color: #DD2D4F;
+}
+
+.footer {
+  background: url("/Project/Images/bg-wave-sym.png"), -webkit-gradient(linear, right top, left top, from(#3f4b62), to(#935f86));
+  background: url("/Project/Images/bg-wave-sym.png"), linear-gradient(to left, #3f4b62, #935f86);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
+
+.footer__images-container {
+  margin: 3rem 0;
+}
+
+.footer .first-image-wrapper,
+.footer .second-image-wrapper {
+  max-width: 14rem;
+}
+
+.footer .first-image-wrapper {
+  margin-right: 1rem;
+}
+
+.footer p {
+  color: #d3c9c9;
+}
+
+.footer__button-wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.footer__button-wrapper:hover .footer__button-circle {
+  z-index: 2;
+  background-color: gray;
+  opacity: 0.7;
+}
+
+.footer__button-circle {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 1rem;
+  border: 0.1rem solid #d3c9c9;
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.footer__button-circle::before {
+  content: '\f019';
+  font-family: FontAwesome;
+  padding: 2rem 2.3rem;
+  background-color: #fff;
+  color: #845B7F;
+  font-size: 3.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
 }
 /*# sourceMappingURL=main.css.map */

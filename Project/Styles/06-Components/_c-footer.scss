@@ -1,0 +1,61 @@
+.footer {
+    background: url('/Project/Images/bg-wave-sym.png'), linear-gradient(to left, #3f4b62, #935f86);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+
+    &__images-container {
+        margin: $space-3 0;
+    }
+
+    .first-image-wrapper,
+    .second-image-wrapper {
+        max-width: 14rem;
+    }
+
+    .first-image-wrapper {
+        margin-right: $space-1;
+    }
+
+    p {
+        color: $grey-700;
+    }
+
+    &__button-wrapper {
+       width: fit-content;
+       cursor: pointer;
+
+        &:hover .footer__button-circle{
+            z-index: 2;
+            background-color: $grey-500;
+            opacity: 0.7;
+        }
+    }
+
+    &__button-circle {
+        position: relative;
+        display: inline-block;
+        border-radius: 50%;
+        padding: $space-1;
+        border: .1rem solid $grey-700;
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: $space-1;
+
+        &::before {
+            content: '\f019';
+            font-family: FontAwesome;
+            padding: 2rem 2.3rem;
+            background-color: $primary-white;
+            color: $blue-300;
+            font-size: 3.5rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+        }
+    }
+
+}
