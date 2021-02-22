@@ -314,7 +314,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: 'Montseratt', sans-serif;
   margin: 0;
   font-weight: 400;
@@ -351,7 +351,7 @@ h6 {
 p {
   color: gray;
   line-height: 1.4;
-  margin: 0;
+  margin: 1rem 0;
   padding: 0;
 }
 
@@ -436,6 +436,14 @@ p {
   margin-top: 10rem;
 }
 
+.o-margin-list-items-2 > * + * {
+  margin-left: 2rem;
+}
+
+.o-margin-list-items-3 > * + * {
+  margin-left: 3rem;
+}
+
 .o-text-center {
   text-align: center;
 }
@@ -477,10 +485,6 @@ p {
   margin-bottom: 0.2rem;
 }
 
-.top-navigation__list > * + * {
-  margin-left: 3rem;
-}
-
 .top-navigation__list-item .white-color-text {
   color: #fff;
 }
@@ -496,7 +500,7 @@ p {
 .btn {
   outline: none;
   padding: 1rem 2.4rem;
-  border: .2rem solid;
+  border: 0.2rem solid;
   border-radius: 2rem;
   background: transparent;
   color: #fff;
@@ -509,8 +513,8 @@ p {
 }
 
 .btn--cta:hover {
-  -webkit-box-shadow: 0 0 1.6rem .2rem grey;
-          box-shadow: 0 0 1.6rem .2rem grey;
+  -webkit-box-shadow: 0 0 1.6rem 0.2rem grey;
+          box-shadow: 0 0 1.6rem 0.2rem grey;
 }
 
 .btn--primary {
@@ -523,10 +527,6 @@ p {
 .btn--primary:hover {
   -webkit-box-shadow: 0 0 1rem 0.2rem #3f3c3c;
           box-shadow: 0 0 1rem 0.2rem #3f3c3c;
-}
-
-.btn--primary.darkblue-bg {
-  background-color: #404755;
 }
 
 .btn--secondary {
@@ -641,6 +641,24 @@ p {
   color: #fff;
 }
 
+.span-heading-with-before {
+  display: inline-block;
+  font-size: 2rem;
+  position: relative;
+  color: #DD2D4F;
+  margin-bottom: 1rem;
+}
+
+.span-heading-with-before::before {
+  content: '';
+  position: absolute;
+  background-color: #DD2D4F;
+  top: 1.1rem;
+  left: -3rem;
+  width: 2rem;
+  height: 0.2rem;
+}
+
 .first-section__header {
   margin-bottom: 3rem;
 }
@@ -671,24 +689,6 @@ p {
   max-width: 40rem;
 }
 
-.second-section__span-heading {
-  display: inline-block;
-  font-size: 2rem;
-  position: relative;
-  color: #DD2D4F;
-  margin-bottom: 1rem;
-}
-
-.second-section__span-heading::before {
-  content: '';
-  position: absolute;
-  background-color: #DD2D4F;
-  top: 1.1rem;
-  left: -3rem;
-  width: 2rem;
-  height: 0.2rem;
-}
-
 .second-section__first-description, .second-section__second-description {
   max-width: 30%;
 }
@@ -697,7 +697,7 @@ p {
   text-align: right;
 }
 
-.second-section__second-description .span-heading-line-before {
+.second-section__second-description .span-heading-with-before {
   margin-left: 3rem;
 }
 
@@ -716,7 +716,6 @@ p {
 
 .third-section__paragraph {
   color: #d3c9c9;
-  margin-bottom: 2rem;
 }
 
 .third-section__heading {
@@ -733,5 +732,72 @@ p {
   cursor: pointer;
   -webkit-box-shadow: 0 0 1rem 0.1rem #1D1D1D;
           box-shadow: 0 0 1rem 0.1rem #1D1D1D;
+}
+
+.fourth-section__main-heading {
+  color: #DD2D4F;
+  margin-bottom: 3rem;
+}
+
+.fourth-section__slider-list a {
+  color: gray;
+  border: none;
+}
+
+.fourth-section__slider-list a:hover {
+  color: white;
+  background: -webkit-gradient(linear, right top, left top, from(#3f4b62), to(#935f86));
+  background: linear-gradient(to left, #3f4b62, #935f86);
+  -webkit-box-shadow: 0px 0px 6px 3px grey;
+          box-shadow: 0px 0px 6px 3px grey;
+}
+
+.fourth-section__body {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.fourth-section__description {
+  max-width: 40%;
+}
+
+.fourth-section__description .span-heading-with-before {
+  margin-left: 3rem;
+}
+
+.fourth-section__description-list-item {
+  color: gray;
+  margin: 0 0 0.4rem 2rem;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.fourth-section__description-list-item::before {
+  font-family: FontAwesome;
+  content: '\f058';
+  top: 0;
+  left: -2rem;
+  position: absolute;
+  font-size: 1.4rem;
+  color: #DD2D4F;
+}
+
+.fourth-section__description-buttons {
+  margin-top: 3rem;
+}
+
+.fourth-section__description-buttons .btn--primary {
+  margin-right: 1rem;
+}
+
+.fourth-section__secondary-heading {
+  color: #1D1D1D;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  letter-spacing: .1rem;
+}
+
+.fourth-section__image-wrapper {
+  max-width: 50rem;
 }
 /*# sourceMappingURL=main.css.map */

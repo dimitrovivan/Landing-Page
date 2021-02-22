@@ -1,0 +1,18 @@
+.span-heading-with-before {
+    display: inline-block;
+    font-size: 2rem;
+    position: relative;
+    color: $pink-700;
+    margin-bottom: $space-1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: $pink-700;
+        top: 1.1rem;
+        left: -3rem;
+        width: 2rem;
+        height: 0.2rem;
+        
+    }
+}

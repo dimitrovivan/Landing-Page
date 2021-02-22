@@ -22,10 +22,6 @@
         }
     }
 
-    &__list > * + * {
-        margin-left: $space-3;
-    }
-
     &__list-item {
         .white-color-text {
             color: $primary-white;

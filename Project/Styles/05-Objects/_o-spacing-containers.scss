@@ -29,3 +29,15 @@
 .o-margin-top--100 {
     margin-top: $container-space--10;
 }
+
+.o-margin-list-items-2 {
+    & > * + * {
+        margin-left: $space-2;
+    }
+}
+
+.o-margin-list-items-3 {
+    & > * + * {
+        margin-left: $space-3;
+    }
+}

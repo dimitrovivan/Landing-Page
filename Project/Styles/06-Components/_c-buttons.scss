@@ -1,51 +1,47 @@
 .btn {
     outline: none;
     padding: 1rem 2.4rem;
-    border: .2rem solid;
+    border: 0.2rem solid;
     border-radius: 2rem;
     background: transparent;
     color: $primary-white;
-}
 
-.btn--cta {
-    border-color: $primary-white;
-    background-color: $primary-white;
-    color: $pink-700;
+    &--cta {
+        border-color: $primary-white;
+        background-color: $primary-white;
+        color: $pink-700;
 
-    &:hover {
-        box-shadow: 0 0 1.6rem .2rem grey;
-    }
-}
-
-.btn--primary {
-    background: $pink-700;
-    border-color: $pink-700;
-    box-shadow: 0 0 .5rem .1rem rgb(88, 78, 78);
-
-    &:hover {
-        box-shadow: 0 0 1rem .2rem rgb(63, 60, 60);
+        &:hover {
+            box-shadow: 0 0 1.6rem 0.2rem grey;
+        }
     }
 
-    &.darkblue-bg {
-        background-color: $blue-700;
+    &--primary {
+        background: $pink-700;
+        border-color: $pink-700;
+        box-shadow: 0 0 0.5rem 0.1rem rgb(88, 78, 78);
+
+        &:hover {
+            box-shadow: 0 0 1rem 0.2rem rgb(63, 60, 60);
+        }
     }
-}
 
-.btn--secondary {
-     border-color: $primary-white;
+    &--secondary {
+        border-color: $primary-white;
 
-     &:hover {
-         border-color: $grey-700;
-         color: $grey-700;
-     }
-}
+        &:hover {
+            border-color: $grey-700;
+            color: $grey-700;
+        }
+    }
 
-.btn--third{
-    border-color: $pink-700;
-    color: $pink-700;
+    &--third {
+        border-color: $pink-700;
+        color: $pink-700;
 
-    &:hover {
-        border-color: $blue-700;
-        color: $blue-700;
+        &:hover {
+            border-color: $blue-700;
+            color: $blue-700;
+        }
     }
 }
