@@ -1,0 +1,44 @@
+.bot-navigation {
+
+    &__header {
+        margin-bottom: $space-2;
+    }
+
+    &__logo {
+        max-width: 4rem;
+        margin-right: $space-1;
+    }
+
+    &__heading {
+        color: $blue-700;
+    }
+
+    &__link-list {
+        margin-bottom: $space-2;
+    }
+
+    &__icon-list-item {
+        color: $primary-black;
+        font-size: 2.2rem;
+        cursor: pointer;
+    }
+
+    &__link-list-item {
+
+        a {
+        color: $pink-700;
+        }
+    }
+
+    &__footer {
+        margin-top: $space-2;
+
+        h5 {
+            color: $grey-500;
+        }
+
+        span {
+            color: $pink-700;
+        }
+    }
+}

@@ -1009,4 +1009,43 @@ p {
           transform: translate(-50%, -50%);
   z-index: 1;
 }
+
+.bot-navigation__header {
+  margin-bottom: 2rem;
+}
+
+.bot-navigation__logo {
+  max-width: 4rem;
+  margin-right: 1rem;
+}
+
+.bot-navigation__heading {
+  color: #404755;
+}
+
+.bot-navigation__link-list {
+  margin-bottom: 2rem;
+}
+
+.bot-navigation__icon-list-item {
+  color: #1D1D1D;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.bot-navigation__link-list-item a {
+  color: #DD2D4F;
+}
+
+.bot-navigation__footer {
+  margin-top: 2rem;
+}
+
+.bot-navigation__footer h5 {
+  color: gray;
+}
+
+.bot-navigation__footer span {
+  color: #DD2D4F;
+}
 /*# sourceMappingURL=main.css.map */
