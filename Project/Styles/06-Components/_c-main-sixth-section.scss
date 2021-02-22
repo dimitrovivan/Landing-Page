@@ -1,0 +1,13 @@
+.main__sixth-section {
+    
+    .sixth-section {
+        
+        &__secondary-heading {
+            color: $primary-black;
+        }
+
+        &__main-heading {
+            color: $pink-700;
+        }
+    }
+}
