@@ -1,8 +1,5 @@
 .footer {
-    background: url('/Project/Images/bg-wave-sym.png'), linear-gradient(to left, #3f4b62, #935f86);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom center;
+    @include wavy-gradient-background("secondary",linear-gradient(to left, #3f4b62, #935f86));
 
     &__images-container {
         margin: $space-3 0;

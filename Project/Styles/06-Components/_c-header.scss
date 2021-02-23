@@ -1,8 +1,5 @@
 .header {
-    background: url('/Project/Images/bg-wave.png'), linear-gradient(94deg, rgba(255,99,93,1) 3%, rgba(208,26,73,1) 100%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom center;
+    @include wavy-gradient-background("header",linear-gradient(94deg, rgba(255,99,93,1) 3%, rgba(208,26,73,1) 100%));
 
     & > * {
         flex-basis: 100%;

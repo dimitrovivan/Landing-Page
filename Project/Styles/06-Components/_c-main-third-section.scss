@@ -1,8 +1,5 @@
 .main__third-section-wrapper  {
-    background: url('/Project/Images/bg-wave-sym.png'), linear-gradient(94deg, rgba(255,99,93,1) 3%, rgba(208,26,73,1) 100%);
-    background-position: bottom center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    @include wavy-gradient-background("secondary",  linear-gradient(94deg, rgba(255,99,93,1) 3%, rgba(208,26,73,1) 100%));
 }
 
 .third-section {
