@@ -50,6 +50,44 @@
   }
 }
 
+@-webkit-keyframes booping {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  65% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes booping {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  65% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 /**
 Use a better box model (opinionated).
 */
@@ -518,6 +556,33 @@ p {
   top: 0;
   left: 0;
   padding: 2rem 5rem 0;
+  z-index: 999;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.top-navigation--scrolled {
+  background-color: white;
+  -webkit-box-shadow: 0 0.1rem 0.2rem 0.1rem #d1cfcf;
+          box-shadow: 0 0.1rem 0.2rem 0.1rem #d1cfcf;
+  padding: .5rem 5rem;
+}
+
+.top-navigation--scrolled .top-navigation__text-wrapper h5,
+.top-navigation--scrolled .top-navigation__text-wrapper h6 {
+  color: #1D1D1D;
+}
+
+.top-navigation--scrolled .top-navigation__right-section .grey-color-text {
+  color: gray;
+}
+
+.top-navigation--scrolled .top-navigation__right-section .white-color-text {
+  color: #DD2D4F;
+}
+
+.top-navigation--scrolled .logo-wrapper img {
+  content: url("/Project/Images/logo_dark.png");
 }
 
 .top-navigation__wrapper {
@@ -536,6 +601,8 @@ p {
 }
 
 .top-navigation__left-section .logo-wrapper {
+  -webkit-animation: booping 2s ease-out 1.2s 1 forwards;
+          animation: booping 2s ease-out 1.2s 1 forwards;
   max-width: 5rem;
   margin-right: 0.8rem;
 }

@@ -4,6 +4,37 @@
     top: 0;
     left: 0;
     padding: 2rem 5rem 0;
+    z-index: 999;
+    transition: all 0.5s;
+
+    &--scrolled {
+        background-color: white;
+        box-shadow: 0 .1rem .2rem .1rem rgb(209, 207, 207);
+        padding: .5rem 5rem;
+    
+        .top-navigation__text-wrapper {
+            h5,
+            h6 {
+                color: $primary-black;
+            }
+        }
+    
+        .top-navigation__right-section {
+            .grey-color-text {
+                color: $grey-500;
+            }
+    
+            .white-color-text {
+                color: $pink-700;
+            }
+        }
+    
+        .logo-wrapper {
+            img {
+                content: url('/Project/Images/logo_dark.png');
+            }
+        }
+    }
 
     &__wrapper {
         display: flex;
@@ -13,6 +44,7 @@
     &__left-section {
         align-items: center;
         .logo-wrapper {
+            animation: booping 2s ease-out 1.2s 1 forwards;
             max-width: 5rem;
             margin-right: 0.8rem;
         }
@@ -35,4 +67,5 @@
         }
     }
 }
+
 
