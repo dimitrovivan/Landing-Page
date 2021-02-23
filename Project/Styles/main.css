@@ -1120,6 +1120,8 @@ p {
 }
 
 .footer__button-circle {
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
   position: relative;
   display: inline-block;
   border-radius: 50%;

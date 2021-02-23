@@ -30,6 +30,7 @@
     }
 
     &__button-circle {
+        transition: background-color .3s;
         position: relative;
         display: inline-block;
         border-radius: 50%;
