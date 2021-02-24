@@ -11,10 +11,18 @@
         padding: $space-2 $space-3 0;
     }
 
+    @include for-phone-only {
+        padding: $space-1;
+    }
+
     &--scrolled {
         background-color: white;
         box-shadow: 0 .1rem .2rem .1rem rgb(209, 207, 207);
         padding: .5rem 5rem;
+
+        @include for-phone-only {
+            padding: .5rem $space-1;
+        }
     
         .top-navigation__text-wrapper {
             h5,

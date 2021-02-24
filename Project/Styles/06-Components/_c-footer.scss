@@ -1,6 +1,16 @@
 .footer {
     @include wavy-gradient-background("secondary",linear-gradient(to left, #3f4b62, #935f86));
 
+    &__description {
+        @include for-tablet-portrait-up {
+        max-width: 60%;
+        }
+
+        @include for-phone-only {
+            max-width: 90%;
+            }
+    }
+
     &__images-container {
         margin: $space-3 0;
     }

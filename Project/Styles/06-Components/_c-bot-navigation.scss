@@ -1,5 +1,11 @@
 .bot-navigation {
 
+    & {
+        @include for-tablet-portrait-up {
+            max-width: 90%;
+        }
+    }
+
     &__header {
         margin-bottom: $space-2;
     }
