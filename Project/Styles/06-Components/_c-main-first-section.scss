@@ -1,3 +1,9 @@
+.main__first-section {
+    @include for-tablet-portrait-up {
+        max-width: 90%;
+    }
+}
+
 .first-section__header {
     margin-bottom: $space-3;
 
@@ -12,6 +18,18 @@
     h1,
     h3 {
         margin-bottom: $space-1;
+    }
+}
+
+.first-section__body {
+    @include for-phone-only {
+        .cards-wrapper {
+            flex-flow: column wrap;
+        }
+
+        .advertise-card {
+            margin: $space-2 0 0;
+        }
     }
 }
 

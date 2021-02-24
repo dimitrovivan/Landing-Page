@@ -1,7 +1,19 @@
 .second-section {
 
+    @include for-tablet-portrait-up {
+        max-width: 90%;
+    }
+
     & > * {
         justify-content: space-around;
+    }
+
+    &__nice-feature,
+    &__smart-design {
+
+        @include for-phone-only {
+            flex-flow: column wrap;
+        }
     }
 
     &__image {
@@ -10,15 +22,25 @@
 
     &__first-description,
     &__second-description {
+        margin: $space-3 0 0;
         max-width: 30%;
     }
 
     &__first-description {
         text-align: right;
-
+       
+        @include for-phone-only {
+            max-width: 100%;
+            order: 1;
+        }
     }
 
     &__second-description {
+       
+        @include for-phone-only {
+            max-width: 100%;
+        }
+
         .span-heading-with-before {
             margin-left: $space-3;
          }
@@ -26,8 +48,11 @@
 
     &__heading {
         color: $primary-black;
-        font-weight: 100;
-        margin-bottom: $space-1;
+        font-size: 4rem;
+        
+        &--2 {
+            margin-bottom: $space-1;
+        }
     }
 
 }

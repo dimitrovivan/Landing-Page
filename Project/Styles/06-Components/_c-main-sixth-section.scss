@@ -1,13 +1,38 @@
-.main__sixth-section {
-    
-    .sixth-section {
-        
-        &__secondary-heading {
-            color: $primary-black;
+.sixth-section {
+
+    & {
+        @include for-tablet-portrait-up {
+            max-width: 90%;
+        }
+    }
+
+    &__header {
+
+        @include for-tablet-portrait-up {
+            max-width: 80%;
+        }
+    }
+     
+    &__body {
+
+        .cards-wrapper {
+            @include for-phone-only {
+               flex-flow: column wrap;
+            }
         }
 
-        &__main-heading {
-            color: $pink-700;
+        .price-card {
+            @include for-phone-only {
+                margin: 0 0 $space-2;
+            }
         }
+    }
+
+    &__secondary-heading {
+        color: $primary-black;
+    }
+
+    &__main-heading {
+        color: $pink-700;
     }
 }

@@ -1,4 +1,11 @@
 .fourth-section {
+
+    & {
+        @include for-tablet-portrait-up {
+            max-width: 90%;
+        }
+    }
+
     &__main-heading {
         color: $pink-700;
         margin-bottom: $space-3;
@@ -20,10 +27,22 @@
 
     &__body {
         justify-content: space-around;
+
+        & {
+            @include for-tablet-portrait-up {
+                flex-flow: column wrap;
+            }
+        }
     }
 
     &__description {
         max-width: 40%;
+
+        & {
+            @include for-tablet-portrait-up {
+                max-width: 100%;
+            }
+        }
 
         .span-heading-with-before {
             margin-left: $space-3;
@@ -49,8 +68,28 @@
       &-buttons {
           margin-top: $space-3;
 
+          & {
+              @include for-tablet-portrait-up {
+                  margin: $container-space--5 auto 0;
+                  max-width: 50%;
+                  display: flex;
+                  flex-flow: column wrap;
+                  justify-content: center;
+
+                  & > * {
+                      flex-grow: 1;
+                  }
+              }
+          }
+
           .btn--primary {
               margin-right: $space-1;
+
+              & {
+                  @include for-tablet-portrait-up {
+                      margin: 0 0 $space-1;
+                  }
+              }
           }
       }
     
@@ -65,6 +104,11 @@
 
     &__image-wrapper {
         max-width: 50rem;
+
+        @include for-tablet-portrait-up {
+            margin-bottom: $space-3;
+            max-width: 100%;
+        }
     }
 
 }

@@ -4,6 +4,28 @@
 
 .third-section {
 
+    & {
+        @include for-tablet-portrait-up {
+            max-width: 90%;
+        }
+    }
+
+    &__description {
+
+        @include for-tablet-portrait-up {
+            max-width: 100%;
+        }
+    }
+
+    &__cards-wrapper {
+
+         @include for-phone-only {
+             margin: $space-3 0 0;
+             flex-flow: column wrap;
+         }
+
+    }
+
     &__paragraph {
         color: $grey-700;
     }

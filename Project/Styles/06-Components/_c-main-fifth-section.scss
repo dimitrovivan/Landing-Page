@@ -1,10 +1,22 @@
 .main__fifth-section {
     background-color: $grey-300;
-    height: 500px;
+    height: 50rem;
 
     h2,
     h4 {
         color: $grey-500;
         margin-bottom: $space-2;
     }
+
+    h2 {
+        line-height: 1.2;
+
+        & {
+            @include for-phone-only {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    
 }
