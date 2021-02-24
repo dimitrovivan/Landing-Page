@@ -6,7 +6,7 @@
     }
 
     &__image-container {
-        max-width: 45rem;
+        max-width: 50rem;
         opacity: 0;
         animation: reveal-scaling 0.4s ease-out 1s 1 forwards;
     }
@@ -16,12 +16,16 @@
     }
 
     &__description  {
-        h1 {
+        .h1-like {
         opacity: 0;
         font-size: 6rem;
         font-weight: 600;
-        letter-spacing: 0.2rem;
+        margin-bottom: .2rem;
         animation: reveal-from-bot 0.4s ease-out 1 forwards;
+        }
+
+        .h1-like.landing-page {
+            animation-delay: 0.15s;
         }
 
         h4 {
