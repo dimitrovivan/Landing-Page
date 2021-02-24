@@ -13,3 +13,23 @@ window.addEventListener('scroll', ()=> {
             buttonToChange.classList.add('btn--secondary');
         }
 });
+
+window.onload=function(){
+const menuBtn = document.querySelector('.top-navigation__burger-icon-container');
+const burgerIcon = document.querySelector('.top-navigation__burger-icon');
+const dropDownList = document.querySelector('.top-navigation__list');
+
+   let isShown = false;
+   menuBtn.addEventListener('click', () => {
+       if (!isShown) {
+    burgerIcon.classList.add('open');
+    dropDownList.classList.add('open');
+    isShown = true;
+} else {
+    burgerIcon.classList.remove('open');
+    dropDownList.classList.remove('open');
+
+    isShown = false;
+}
+});
+}
