@@ -642,6 +642,10 @@ p {
   color: gray;
 }
 
+.top-navigation--scrolled .top-navigation__right-section .grey-color-text:hover {
+  color: #1D1D1D;
+}
+
 .top-navigation--scrolled .top-navigation__right-section .white-color-text {
   color: #DD2D4F;
 }

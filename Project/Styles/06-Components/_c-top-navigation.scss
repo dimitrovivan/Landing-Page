@@ -34,6 +34,10 @@
         .top-navigation__right-section {
             .grey-color-text {
                 color: $grey-500;
+
+                &:hover {
+                    color: $primary-black;
+                }
             }
     
             .white-color-text {

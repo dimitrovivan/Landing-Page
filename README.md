@@ -1,5 +1,6 @@
 # Landing-Page
 Single Page | Workshop
+Dekstop-first
 The design is given from @Softuni in HTML&CSS course, the implementation
 is done by me using:
 -- HTML
