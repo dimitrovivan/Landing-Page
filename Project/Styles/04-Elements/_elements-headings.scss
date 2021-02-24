@@ -6,3 +6,14 @@
         font-weight: 400;
     };
 }
+
+@include for-tablet-portrait-up {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
