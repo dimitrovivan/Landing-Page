@@ -651,7 +651,7 @@ p {
 }
 
 .top-navigation--scrolled .logo-wrapper img {
-  content: url("/Project/Images/logo_dark.png");
+  content: url("/Images/logo_dark.png");
 }
 
 .top-navigation--scrolled .top-navigation__burger-icon-container {
