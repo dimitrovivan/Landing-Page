@@ -1,5 +1,5 @@
 @mixin wavy-gradient-background($wave-name, $gradient) {
-    background: url("../../Images/#{$wave-name}-wave.png"), $gradient;
+    background: url("https://dimitrovivan.github.io/Landing-Page/Images/#{$wave-name}-wave.png"), $gradient;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom center;
