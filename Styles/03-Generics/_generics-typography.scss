@@ -4,19 +4,23 @@
 html {
    
     font-size: 62.5%;
+
+    @include for-big-desktop-up {
+        font-size: 72%;
+    }
+
+    @include for-desktop-up {
+        font-size: 68%;
+    }
+
+    @include for-tablet-portrait-up {
+        font-size: 65%;
+    }
 }
 
 body {
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
     color: $primary-white;
-
-    @include for-big-desktop-up {
-        font-size: 1.7rem;
-    }
-
-    @include for-tablet-landscape-up {
-        font-size: 1.5rem;
-    }
 }
 
