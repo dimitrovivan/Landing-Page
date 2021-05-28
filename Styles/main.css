@@ -205,7 +205,12 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace,
+ SFMono-Regular,
+ Consolas,
+ 'Liberation Mono',
+ Menlo,
+ monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -651,7 +656,7 @@ p {
 }
 
 .top-navigation--scrolled .logo-wrapper img {
-  content: url("./Images/logo_dark.png");
+  content: url("../../Images/logo_dark.png");
 }
 
 .top-navigation--scrolled .top-navigation__burger-icon-container {
@@ -880,7 +885,7 @@ p {
 }
 
 .header {
-  background: url("./Images/header-wave.png"), linear-gradient(94deg, #ff635d 3%, #d01a49 100%);
+  background: url("../../images/header-wave.png"), linear-gradient(94deg, #ff635d 3%, #d01a49 100%);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
@@ -1270,7 +1275,7 @@ p {
 }
 
 .main__third-section-wrapper {
-  background: url("./Images/secondary-wave.png"), linear-gradient(94deg, #ff635d 3%, #d01a49 100%);
+  background: url("../../images/secondary-wave.png"), linear-gradient(94deg, #ff635d 3%, #d01a49 100%);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
@@ -1498,8 +1503,8 @@ p {
 }
 
 .footer {
-  background: url("./Images/secondary-wave.png"), -webkit-gradient(linear, right top, left top, from(#3f4b62), to(#935f86));
-  background: url("./Images/secondary-wave.png"), linear-gradient(to left, #3f4b62, #935f86);
+  background: url("../../Images/secondary-wave.png"), -webkit-gradient(linear, right top, left top, from(#3f4b62), to(#935f86));
+  background: url("../../Images/secondary-wave.png"), linear-gradient(to left, #3f4b62, #935f86);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
