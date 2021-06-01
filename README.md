@@ -1,9 +1,13 @@
 # Landing-Page
 Single Page | Workshop
-Dekstop-first
-The design is given from @Softuni in HTML&CSS course, the implementation
-is done by me using:
--- HTML
--- CSS - including SASS , following the BEM methodology and ITCSS architecture.
--- Javascript - just a little bit for some dynamic animations.
+
+## Project description
+
+ Landing page, responsive and dekstop first. Made after the HTML & CSS course to train the gained skills.
+ It's following the BEM methodology and ITCSS architecture.
  
+## Tech stack:
+HTML5, CSS3, SASS, Javascript
+
+## Overview
+https://dimitrovivan.github.io/Landing-Page/
