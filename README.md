@@ -7,7 +7,7 @@ Single Page | Workshop
  It's following the BEM methodology and ITCSS architecture.
  
 ## Tech stack:
-HTML5, CSS3, SASS, Javascript
+HTML5, SCSS, Javascript
 
 ## Overview
 https://dimitrovivan.github.io/Landing-Page/
